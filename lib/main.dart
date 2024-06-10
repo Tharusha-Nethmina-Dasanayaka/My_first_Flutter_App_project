@@ -8,8 +8,8 @@ void main(){
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  final double Circle_width = 80;
-  final double Circle_height = 80;
+  final double Circle_width = 60;
+  final double Circle_height = 60;
 
 
   @override
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                       const SizedBox(height: 10,),
                       const Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015." ,style: TextStyle(
                         fontSize: 14,
-                        fontWeight: FontWeight.w400
+                        fontWeight: FontWeight.w400,
                       ),),
                       const SizedBox(height: 10),
                       Row(
@@ -72,8 +72,9 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15,vertical: 25),
                   width: double.infinity,
-                  height:400,
+                  height:500,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(18),
                     color: const Color(0xffFFE500)
@@ -97,18 +98,54 @@ class MyApp extends StatelessWidget {
                           ),
                           SizedBox(height: 10,),
                           Container(
-                            width: double.infinity,
-                           height:220,
+                            padding: EdgeInsets.symmetric(horizontal: 15,vertical: 25),
+                          width: double.infinity,
+                           height:300,
                            decoration: BoxDecoration(
                            borderRadius: BorderRadius.circular(18),
                           color: const Color(0xff9E00FF)
                          ),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Flutter is an open-source"),
-                                Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015."),
+                                Text("Flutter is an open-source",style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xffFFFFFF),
+                                ),),
+                                Text("Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xffFFFFFF),
+                                ),),
+                                SizedBox(height: 10,),
                                 Row( 
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
+                                    Container(
+                                      width:Circle_width,
+                                      height: Circle_height,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(100),
+                                        color: Color(0xff06FFA5)
+                                      ),
+                                    ),
+                                    Container(
+                                      width:Circle_width,
+                                      height: Circle_height,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(100),
+                                        color: Color(0xff06FFA5)
+                                      ),
+                                    ),
+                                    Container(
+                                      width:Circle_width,
+                                      height: Circle_height,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(100),
+                                        color: Color(0xff06FFA5)
+                                      ),
+                                    ),
                                     Container(
                                       width:Circle_width,
                                       height: Circle_height,
@@ -131,5 +168,6 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+}
   
 
